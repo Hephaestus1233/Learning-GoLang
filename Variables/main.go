@@ -12,6 +12,12 @@ import (
 var i int // Scoped to the package, not visible to external imports
 var I int // Exported from the package and globally visible
 
+//This exportation/scoping only applies to the first letter
+/*
+var iNteger int -> will be local to this package
+var Integer int -> will be global to any program that uses this package
+*/
+
 //var i int is read as "Initializing a new variable named i which is an integer"
 
 func main() {
