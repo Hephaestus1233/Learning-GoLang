@@ -43,7 +43,7 @@ func main() {
 	//Bit-wise operators
 	fmt.Println(
 		example1&example2,  //comparing which bits are 1 in both numbers, so therefore 0010 = 2
-		example1|example2,  //comparing which bits are 1 in either number, so therefore 1011 = 3
+		example1|example2,  //comparing which bits are 1 in either number, so therefore 1011 = 11
 		example1^example2,  //comparing which bits are 1 in one number but not the other, so therefore 1001 = 9
 		example1&^example2, //comparing which bits are 0 in both numbers, so therefore 0100 = 8 (Operator can be considered the opposite of the bit-and)
 		example1<<3,        //shifts the bits 3 to the left (multiplies number by 2^3)
