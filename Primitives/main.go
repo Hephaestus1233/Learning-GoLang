@@ -37,7 +37,7 @@ func main() {
 	//All normal operators apply to these numbers: (+ - * / %)
 	/*Notes:
 	1. Dividing two integers returns an integer and may lose information, type cast to float in order to get the decimal information
-	2. Different int/number size types cannot be added together (will result in error) unless you do explicit type casting
+	2. Different number size types cannot be added together (will result in error) unless you do explicit type casting
 	*/
 
 	//Bit-wise operators
@@ -76,12 +76,12 @@ func main() {
 	fmt.Println(imaginary + anotherOne) //All except modulo work on complexes
 
 	//Extracting the components
-	fmt.Printf("%v, %T\n", real(imaginary), real(imaginary)) //complex64 returns an int32
-	fmt.Printf("%v, %T\n", imag(imaginary), imag(imaginary)) //complex128 returns an int64
+	fmt.Printf("%v, %T\n", real(imaginary), real(imaginary)) //complex64 returns an float32
+	fmt.Printf("%v, %T\n", imag(imaginary), imag(imaginary)) //complex128 returns an float64
 
 	//Strings//
 	aNormalString := "this is a string"                           //Strings are immutable
-	aNormalString = aNormalString + " and this is another string" //you can add strings together
+	aNormalString = aNormalString + " and this is another string" //you can add strings together (concatenating)
 
 	asciiConversion := []byte(aNormalString)
 
