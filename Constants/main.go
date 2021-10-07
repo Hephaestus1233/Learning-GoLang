@@ -26,6 +26,7 @@ func main() {
 	fmt.Printf("%v, %T\n", namingConvention, namingConvention) //This prints out 2, int
 
 	//Note that this is interesting because constants can be added to different byte sizes of the same value, while variables will throw an error
+	//However this int8 + int can only happen with an untyped value, which is also the auto-assign thing
 	fmt.Printf("%v, %T\n", namingConvention + interestingVariable, namingConvention + interestingVariable) //this prints out 38, int8
 
 	//Enumerated Constants//
