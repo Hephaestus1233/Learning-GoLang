@@ -25,8 +25,8 @@ func main(){
 		i++; //Note: despite not needing to give the loop an incrementor, it will need to be incremented manually or it will loop indefinitely
 	}
 
-	x := 0
-	for x < 5 { //Otherwise known as "syntactical sugar"
+	x := 0 //this is how you would do a while loop
+	for x < 5 { //Otherwise known as "syntactical sugar", and can remove both semicolons
 		fmt.Println(x);
 		x++;
 	}
