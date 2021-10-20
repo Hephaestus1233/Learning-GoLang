@@ -16,7 +16,7 @@ func main(){
 	var aa int = 42
 	var bb *int = &aa //Stores the memory location that stores the contents of the variable aa
 
-	fmt.Println(&aa, bb) //These are the same values
+	fmt.Println(&aa, bb) //These are the same values (0xasdklalsdjl123, etc)
 	fmt.Println(aa, *bb) //Ditto
 
 	aa = 27 //This does change bb because bb is "pointing" to its location in memory
