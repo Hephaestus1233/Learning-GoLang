@@ -31,7 +31,7 @@ func main(){ //Dude, thank god, Go requires the open brace to be on the same lin
 	for i := 0; i < 5; i++ {
 		func(y int){ //Good practice to include a parameter because parallel threads may cause strange behavior
 			fmt.Println(y)
-		}(i) //not the inclusion of i into the invoke parameters
+		}(i) //note the inclusion of i into the invoke parameters
 	}
 
 	//Functions are types of variables as well
